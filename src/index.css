@@ -100,7 +100,7 @@ hr {
 @media (min-width : 320px) and (max-width : 767px) {
   .btn-delete {
     height : 30px;
-    font-size : 12px;
+    font-size : 13px;
   }
   .input-container input {
     font-size : 15px;
@@ -114,28 +114,28 @@ hr {
     margin-top : 3px;
   }
   .target, .timer {
-    font-size : 12px;
-    padding-top : 6px;
-    padding-bottom : 6px;
+    font-size : 13px;
+    padding-top : 7px;
+    padding-bottom : 7px;
     color : white;
     border-radius : 4px;
   }
   .button-button {
-    font-size : 12px;
+    font-size : 13px;
     padding : 3px 7px;
   }
   .number-button, .operator-button {
-    font-size : 12px;
+    font-size : 13px;
   }
   .header {
-    font-size : 26px;
-    padding-top : 14px;
-    padding-bottom: 14px;
+    font-size : 28px;
+    padding-top : 15px;
+    padding-bottom: 15px;
     text-align : center;
   }
   .input-container{
-    margin-top : 7%;
-    margin-bottom : 5%;
+    margin-top : 8%;
+    margin-bottom : 6%;
   }
   .number-container, .operator-container {
     padding-left:5px !important;
@@ -159,6 +159,9 @@ hr {
 
   .footer-container span {
     font-size : 6px;
+  }
 
+  .modal-container {
+    font-size : 11px;
   }
 }
