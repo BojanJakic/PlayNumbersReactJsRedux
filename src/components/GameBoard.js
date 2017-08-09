@@ -16,9 +16,9 @@ class GameBoard extends Component {
             <div className="game-container">
                 <Header />
                 <div className="row">
-                    <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-                    <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="game">
-                        <div className="row animatable">
+                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10" id="game">
+                        <div className="row">
                             <TargetContainer />
                             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
                             <TimerContainer />
@@ -29,21 +29,21 @@ class GameBoard extends Component {
                                 <UsersInput />
                             </div>
                         </div>
-                        <div className="row animatable">
+                        <div className="row">
                             <NumbersContainer />
                         </div>
-                        <div className="row animatable">
+                        <div className="row">
                             <OperatorsContainer />
                         </div>
                         <div className="row">
                             <ButtonContainer />
                         </div>
-                        <div classname="row">
+                        <div className="row">
                             <Footer />
                         </div>
                         <ModalContainer />
                     </div>
-                    <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
                 </div>
             </div>
         )
