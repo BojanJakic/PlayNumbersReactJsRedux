@@ -40,9 +40,7 @@ const getResult = (input) => {
     var result;
 
     try {
-        console.log(input)
         result = eval(input.join(''));
-        console.log(result)
     }catch(e){
         console.log(e)
     }

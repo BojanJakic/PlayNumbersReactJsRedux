@@ -14,11 +14,11 @@ const ModalErrorInput = (props) => {
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button type="button" onClick={() => props.closeModal()}>Close</Button>
+                <Button type="button" onClick={() => props.closeModal()}>Close</Button>
                 </Modal.Footer>
             </Modal>
         </div>
     )
-}
+};
 
 export default ModalErrorInput;

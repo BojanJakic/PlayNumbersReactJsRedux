@@ -50,7 +50,6 @@ const numbersReducer = (state = initNumbers, action) => {
             };
 
         case 'DELETE' :
-            console.log(action.last);
             return {
                 ...state, numbers: state.numbers.map((current) => current.value === action.last && !isFound && current.isDisabled ?
                     (isFound = true, {...current, isDisabled: false}) : current)
