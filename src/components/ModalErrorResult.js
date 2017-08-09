@@ -9,8 +9,8 @@ const ModalErrorResult = (props) => {
                     <div className="row text-danger">
                         <div className="col-lg-1-offset col-lg-10">
                             <p>Sorry,</p>
-                            <p>Target : {props.target}</p>
-                            <p>Result : {props.result}</p>
+                            <p>Target Number : {props.target}</p>
+                            <p>Your Result : {props.result}</p>
                         </div>
                     </div>
                 </Modal.Body>
