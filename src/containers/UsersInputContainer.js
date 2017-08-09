@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 class UsersInput extends Component {
     render = () => {
         return (
-            <div className="input-container">
+            <div className="input-container animatable">
                 <div className="input-group">
                     <input type="text" className="form-control" readOnly="true" value={this.props.input}/>
                     <span className="input-group-btn">

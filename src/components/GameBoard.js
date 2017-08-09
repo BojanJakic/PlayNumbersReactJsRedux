@@ -24,8 +24,8 @@ class GameBoard extends Component {
                             <TimerContainer />
                         </div>
                         <div className="row">
-                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-                            <div className="col-lg-10">
+                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                            <div className="col-lg-8">
                                 <UsersInput />
                             </div>
                         </div>

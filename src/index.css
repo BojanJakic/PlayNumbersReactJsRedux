@@ -85,7 +85,11 @@ hr {
 
 .footer-container {
   text-align : center;
-  padding-bottom : 15px;
+  padding-bottom : 25px;
+}
+
+.footer-container div{
+  font-size : 25px;
 }
 
 @keyframes fade {
@@ -145,9 +149,14 @@ hr {
     margin-bottom : 10px;
   }
 
-  .footer-container {
-    text-align : center;
+  .footer-container{
     padding-bottom : 10px;
-    font-size : 8px;
+  }
+  .footer-container div {
+    font-size : 10px;
+  }
+
+  .footer-container span {
+    font-size : 7px;
   }
 }
