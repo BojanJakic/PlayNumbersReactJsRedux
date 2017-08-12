@@ -1,25 +1,17 @@
 const initInput = {
     inputValue : [],
     result : 0,
-    isDeleteDisabled : true
+    isDeleteDisabled : true,
 };
 
 const usersInputReducer = (state = initInput, action) => {
     var temp = state.inputValue;
 
     switch(action.type){
-
         case 'ADD_NUMBER' :
+        case 'ADD_OPERATOR':
             temp.push(action.payload);
-            return {
-                ...state, inputValue : temp
-            };
-
-        case 'ADD_OPERATOR' :
-            temp.push(action.payload);
-            return {
-                ...state, inputValue : temp
-            };
+            return {...state, inputValue : temp};
 
         case  'DELETE' :
             temp.pop();
