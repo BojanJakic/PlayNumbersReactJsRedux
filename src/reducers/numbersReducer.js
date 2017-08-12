@@ -19,10 +19,7 @@ const initNumbers = {
             value: '?',
             isDisabled: true
         }
-    ],
-    isFound: false
-
-
+    ]
 };
 
 const numbersReducer = (state = initNumbers, action) => {
