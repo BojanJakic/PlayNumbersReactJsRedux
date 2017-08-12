@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Numbers from '../components/Numbers';
+import { isInputValid } from '../js/validator.js'
 
 class NumbersContainer extends Component {
 
@@ -12,26 +13,33 @@ class NumbersContainer extends Component {
                 {
                     this.props.numbersValues.numbers.map((number, index) => {
                         return (
-                            <Numbers clickHandler={this.props.onNumberClickHandler} disabled={number.isDisabled}
-                                     key={index} value={number.value}/>
+                            <Numbers clickHandler={this.onNumberClickHandler} disabled={number.isDisabled}
+                                     key={index} number={number.value}/>
                         )
                     })
                 }
             </div>
         )
+    };
+
+    onNumberClickHandler = value => {
+        if(isInputValid(value, this.props.input)) {
+            this.props.dispatchNumberAction(value)
+        }
     }
 
 }
 
 const mapStateToProps = (state) => {
     return {
-        numbersValues: state.numbersReducer
+        numbersValues: state.numbersReducer,
+        input : state.usersInputReducer.inputValue
     }
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onNumberClickHandler: value => dispatch({type: 'ADD_NUMBER', payload: value})
+        dispatchNumberAction : value => dispatch({type: 'ADD_NUMBER', payload : value})
     }
 };
 
