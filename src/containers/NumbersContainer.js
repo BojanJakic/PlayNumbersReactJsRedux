@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Numbers from '../components/Numbers';
 import { isInputValid } from '../js/validator.js'
+import { errorInputAnimation } from '../js/animator.js'
 
 class NumbersContainer extends Component {
 
@@ -25,6 +26,8 @@ class NumbersContainer extends Component {
     onNumberClickHandler = value => {
         if(isInputValid(value, this.props.input)) {
             this.props.dispatchNumberAction(value)
+        }else {
+            errorInputAnimation()
         }
     }
 
