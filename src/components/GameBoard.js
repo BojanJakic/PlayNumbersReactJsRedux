@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TargetContainer from '../containers/TargetContainer';
 import TimerContainer from '../containers/TimerContainer';
 import NumbersContainer from '../containers/NumbersContainer';
-import UsersInput from '../containers/UsersInputContainer';
+import UsersInputContainer from '../containers/UsersInputContainer';
 import ButtonContainer from '../containers/ButtonContainer';
 import OperatorsContainer from '../containers/OperatorsContainer';
 import ModalContainer from '../containers/ModalContainer';
@@ -26,8 +26,9 @@ class GameBoard extends Component {
                         <div className="row">
                             <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                             <div className="col-lg-8">
-                                <UsersInput />
+                                <UsersInputContainer />
                             </div>
+                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                         </div>
                         <div className="row">
                             <NumbersContainer />
