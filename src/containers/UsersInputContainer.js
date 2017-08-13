@@ -7,7 +7,7 @@ class UsersInput extends Component {
         return (
             <div className="input-container animatable">
                 <div className="input-group">
-                    <input type="text" className="form-control" readOnly="true" value={this.props.input}/>
+                    <input id="usersInput" type="text" className="form-control" readOnly="true" value={this.props.input}/>
                     <span className="input-group-btn">
             <button disabled={this.props.disable} className="btn btn-primary btn-delete" type="button" onClick={() => this.props.delete(this.props.last)}>DELETE</button>
             </span>
