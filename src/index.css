@@ -17,13 +17,13 @@
 }
 
 .input-container {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 3%;
 }
 
 .input-container input {
     font-size: 35px;
-    height: 55px;
+    height: 60px;
 }
 
 .button-container {
