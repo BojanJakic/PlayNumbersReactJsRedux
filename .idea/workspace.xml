@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a302098-0ff2-4b33-b7a5-294e9893c6b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/buttonsReducer.js" afterPath="$PROJECT_DIR$/src/reducers/buttonsReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/numbersReducer.js" afterPath="$PROJECT_DIR$/src/reducers/numbersReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/usersInputReducer.js" afterPath="$PROJECT_DIR$/src/reducers/usersInputReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -731,7 +727,7 @@
       <workItem from="1502355934525" duration="1199000" />
       <workItem from="1502445865579" duration="14604000" />
       <workItem from="1502549159181" duration="10336000" />
-      <workItem from="1502611433259" duration="11858000" />
+      <workItem from="1502611433259" duration="12034000" />
     </task>
     <task id="LOCAL-00001" summary="Open link in new tab">
       <created>1502273686684</created>
@@ -936,11 +932,39 @@
       <option name="project" value="LOCAL" />
       <updated>1502639754834</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add delete button">
+      <created>1502639778990</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1502639778990</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Rename from action.last to action.payload">
+      <created>1502639847075</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1502639847075</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Delete isDeleteDisabled variable">
+      <created>1502639893508</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1502639893508</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Change input-container class">
+      <created>1502639929926</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1502639929926</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163559000" />
+    <option name="totallyTimeSpent" value="163735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,8 +1009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Open link in new tab" />
-    <MESSAGE value="Remove unused classes" />
     <MESSAGE value="Change text within modals" />
     <MESSAGE value="Add font awesome library" />
     <MESSAGE value="Add image" />
@@ -1008,7 +1030,11 @@
     <MESSAGE value="Add delete action" />
     <MESSAGE value="Change component name : UserInput -&gt; UserInputContainer" />
     <MESSAGE value="Remove mapDispatchToProps()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove mapDispatchToProps()" />
+    <MESSAGE value="Add delete button" />
+    <MESSAGE value="Rename from action.last to action.payload" />
+    <MESSAGE value="Delete isDeleteDisabled variable" />
+    <MESSAGE value="Change input-container class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change input-container class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
