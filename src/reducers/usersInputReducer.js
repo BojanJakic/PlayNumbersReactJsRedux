@@ -1,7 +1,6 @@
 const initInput = {
     inputValue : [],
-    result : 0,
-    isDeleteDisabled : true,
+    result : 0
 };
 
 const usersInputReducer = (state = initInput, action) => {
@@ -18,10 +17,10 @@ const usersInputReducer = (state = initInput, action) => {
             return {...state,inputValue : temp};
 
         case 'END GAME' :
-            return {...state, result : getResult(state.inputValue), isDeleteDisabled : true};
+            return {...state, result : getResult(state.inputValue)};
 
         case 'START GAME' :
-            return {...state, inputValue : [], isDeleteDisabled : false};
+            return {...state, inputValue : []};
 
         default :
             return state;
