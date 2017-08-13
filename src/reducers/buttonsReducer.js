@@ -3,10 +3,13 @@ var initButtons = {
         {
             text: 'START GAME',
             isDisabled: false
-        }
-        ,
+        },
         {
             text: 'END GAME',
+            isDisabled: true
+        },
+        {
+            text: 'DELETE',
             isDisabled: true
         }
     ]
@@ -20,13 +23,13 @@ const buttonReducer = (state = initButtons, action) => {
             return {
                 ...state,
                 btn: state.btn.map((current) => current.text === 'START GAME' ?
-                    {...current, isDisabled: true} : {...current, isDisabled : false})
+                    {...current, isDisabled: true} : {...current, isDisabled: false})
             };
 
         case 'END GAME' :
             return {
-                ...state, btn : state.btn.map((current) => current.text === 'END GAME' ?
-                    {...current, isDisabled : true} : {...current, isDisabled : false})
+                ...state, btn: state.btn.map((current, index) => current.text !== 'START GAME' ?
+                    {...current, isDisabled: true} : {...current, isDisabled: false})
             };
 
         default :
