@@ -84,8 +84,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+            <state relative-caret-position="465">
+              <caret line="100" column="41" lean-forward="true" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -691,7 +691,7 @@
       <workItem from="1502355934525" duration="1199000" />
       <workItem from="1502445865579" duration="14604000" />
       <workItem from="1502549159181" duration="10336000" />
-      <workItem from="1502611433259" duration="3580000" />
+      <workItem from="1502611433259" duration="3612000" />
     </task>
     <task id="LOCAL-00001" summary="Open link in new tab">
       <created>1502273686684</created>
@@ -861,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502618939384</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="???">
+      <created>1502618956040</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1502618956040</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155281000" />
+    <option name="totallyTimeSpent" value="155313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1296,8 +1303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+        <state relative-caret-position="465">
+          <caret line="100" column="41" lean-forward="true" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
           <folding />
         </state>
       </provider>
