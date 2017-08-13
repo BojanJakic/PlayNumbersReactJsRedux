@@ -19,7 +19,9 @@ const initNumbers = {
             value: '?',
             isDisabled: true
         }
-    ]
+    ],
+    last : ''
+
 };
 
 const numbersReducer = (state = initNumbers, action) => {
@@ -35,7 +37,7 @@ const numbersReducer = (state = initNumbers, action) => {
 
         case 'ADD_NUMBER' :
             return {
-                ...state, numbers: state.numbers.map((current) => current.value === action.payload && !isFound && !current.isDisabled ?
+                ...state, last : action.payload, numbers: state.numbers.map((current) => current.value === action.payload && !isFound && !current.isDisabled ?
                     (isFound = true, {...current,isDisabled : true}) : current)
             };
 
@@ -48,7 +50,7 @@ const numbersReducer = (state = initNumbers, action) => {
 
         case 'DELETE' :
             return {
-                ...state, numbers: state.numbers.map((current) => current.value === action.last && !isFound && current.isDisabled ?
+                ...state, numbers: state.numbers.map((current) => current.value === action.payload && !isFound && current.isDisabled ?
                     (isFound = true, {...current, isDisabled: false}) : current)
             };
 
