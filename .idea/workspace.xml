@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a302098-0ff2-4b33-b7a5-294e9893c6b0" name="Default" comment="Refactor code">
+    <list default="true" id="4a302098-0ff2-4b33-b7a5-294e9893c6b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -84,8 +84,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+            <state relative-caret-position="510">
+              <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -691,7 +691,7 @@
       <workItem from="1502355934525" duration="1199000" />
       <workItem from="1502445865579" duration="14604000" />
       <workItem from="1502549159181" duration="10336000" />
-      <workItem from="1502611433259" duration="3551000" />
+      <workItem from="1502611433259" duration="3580000" />
     </task>
     <task id="LOCAL-00001" summary="Open link in new tab">
       <created>1502273686684</created>
@@ -854,11 +854,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502618912283</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="???">
+      <created>1502618939384</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1502618939384</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155252000" />
+    <option name="totallyTimeSpent" value="155281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -923,7 +930,8 @@
     <MESSAGE value="Add errorInputAnimation() and startGameAnimation()" />
     <MESSAGE value="Update if-else block, change conditions" />
     <MESSAGE value="Add errorInput animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add errorInput animation" />
+    <MESSAGE value="???" />
+    <option name="LAST_COMMIT_MESSAGE" value="???" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,8 +1296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+        <state relative-caret-position="510">
+          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
           <folding />
         </state>
       </provider>
