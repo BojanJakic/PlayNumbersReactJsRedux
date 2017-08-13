@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import Operators from '../components/Operators';
 import { isInputValid } from '../js/validator.js';
+import { errorInputAnimation } from '../js/animator.js'
 
 class OperatorsContainer extends Component{
     render = () => {
@@ -22,6 +23,8 @@ class OperatorsContainer extends Component{
     onOperatorClickHandler = value => {
         if(isInputValid(value, this.props.input)) {
             this.props.dispatchOperatorAction(value)
+        } else {
+            errorInputAnimation()
         }
     }
 }
