@@ -47,11 +47,10 @@ const isOpenParenthesesMissing = (allInputs) => {
             close++;
         }
     }
-
-    if (open < close) {
+    if (open <= close) {
         return true;
     } else {
-        return close;
+        return false;
     }
 };
 
