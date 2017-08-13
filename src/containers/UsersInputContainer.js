@@ -6,11 +6,8 @@ class UsersInput extends Component {
     render = () => {
         return (
             <div className="input-container animatable">
-                <div className="input-group">
+                <div>
                     <input id="usersInput" type="text" className="form-control" readOnly="true" value={this.props.input}/>
-                    <span className="input-group-btn">
-            <button disabled={this.props.disable} className="btn btn-primary btn-delete" type="button" onClick={() => this.props.delete(this.props.last)}>DELETE</button>
-            </span>
                 </div>
             </div>
 
@@ -23,15 +20,7 @@ const mapStateToProps = (state) => {
 
     return {
         input : userInput.join(''),
-        last :  userInput[userInput.length - 1],
-        disable : state.usersInputReducer.isDeleteDisabled
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        delete : (last) => dispatch({type : 'DELETE',last : last})
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(UsersInput);
+export default connect(mapStateToProps)(UsersInput);
