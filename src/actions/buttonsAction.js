@@ -15,7 +15,12 @@ const handleButtonAction = (clickedButton, dispatch) => {
     } else if (clickedButton === 'END GAME') {
         return dispatch => {
             endGame(dispatch);
-            stopTimer();
+        }
+    }else if(clickedButton === 'DELETE') {
+        var input = store.getState().usersInputReducer.inputValue;
+        var last = input[input.length - 1];
+        return dispatch => {
+            dispatch(deleteInput(last))
         }
     }
 };
@@ -27,12 +32,18 @@ const startGame = () => {
 };
 
 const endGame = (dispatch) => {
-    var interval = store.getState().timerReducer.intervalId;
-    stopTimer(interval);
+    stopTimer();
 
     dispatch({
         type: 'END GAME'
     });
+};
+
+const deleteInput = (last) => {
+    return {
+        type : 'DELETE',
+        payload : last
+    }
 };
 
 const startTimer = (dispatch) => {
@@ -52,7 +63,8 @@ const startTimer = (dispatch) => {
     }, 1000)
 };
 
-const stopTimer = (interval) => {
+const stopTimer = () => {
+    var interval = store.getState().timerReducer.intervalId;
     clearInterval(interval)
 };
 
