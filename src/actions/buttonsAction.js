@@ -1,10 +1,12 @@
 import store from '../store.js';
+import { startGameAnimation } from '../js/animator.js'
 
 const handleButtonAction = (clickedButton, dispatch) => {
 
     if (clickedButton === 'START GAME') {
         return dispatch => {
-            addAnimationClass();
+            startGameAnimation();
+
             setTimeout(() => {
                 dispatch(startGame());
                 startTimer(dispatch);
@@ -31,8 +33,6 @@ const endGame = (dispatch) => {
     dispatch({
         type: 'END GAME'
     });
-
-    removeAnimationClass();
 };
 
 const startTimer = (dispatch) => {
@@ -54,22 +54,6 @@ const startTimer = (dispatch) => {
 
 const stopTimer = (interval) => {
     clearInterval(interval)
-};
-
-const addAnimationClass = () => {
-    var animatableElements = document.getElementsByClassName('animatable');
-
-    for(let elem of animatableElements){
-        elem.classList.add("fadeInAndOut")
-    }
-};
-
-const removeAnimationClass = () => {
-    var animatableElements = document.getElementsByClassName('animatable');
-
-    for(let elem of animatableElements) {
-        elem.classList.remove("fadeInAndOut")
-    }
 };
 
 export default handleButtonAction;
